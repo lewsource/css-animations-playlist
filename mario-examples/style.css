@@ -12,17 +12,17 @@ html, body{
 }
 
 .sky{
-  height: 40%;
+  height: 60%;
   background: skyblue;
 }
 
 .grass{
-  height: 30%;
-  background: seagreen;
+  height: 20%;
+  background: linear-gradient(#4caf50, seagreen);
 }
 
 .road{
-  height: 30%;
+  height: 20%;
   background: dimgrey;
   box-sizing: border-box;
   border-top: 10px solid grey;
@@ -38,16 +38,38 @@ html, body{
   position: absolute;
   top: 45%;
 }
+.cloud {position: absolute;
+        animation-name:cloudmove;
+        animation-duration:10s;
+        animation-fill-mode:both;
+        animation-iteration-count:infinite;
+        animation-direction:normal;
+        animation-timing-function: linear;
+}
+
+
+.cloud1 {position: absolute;
+        top:100px;
+        animation-name:cloudmovealt;
+        animation-duration:10s;
+        animation-fill-mode:both;
+        animation-iteration-count:infinite;
+        animation-direction:normal;
+        animation-timing-function: linear;
+}
+
+@keyframes cloudmove{
+  from{transform: translateX(-300px)}
+  to{transform: translateX(1920px)}
+}
+
+
+  @keyframes cloudmovealt{
+    from{transform: translateX(-300px)}
+    to{transform: translateX(1920px)}
 
 /*// ELEMENTS TO ANIMATE //*/
 
 
 
 /*// KEYFRAMES //*/
-
-
-
-
-
-
-
